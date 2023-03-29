@@ -1,0 +1,11 @@
+name: poc_melos
+
+packages:
+  - packages/*
+
+scripts:
+  analyze:
+    exec: dart analyze .
+  test:
+    run: melos exec --flutter -- flutter test
+
