@@ -1,7 +1,12 @@
 library module_b;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:module_a/module_a.dart';
+
+class ModuleB {
+  final String name;
+  final ModuleA moduleA;
+
+  ModuleB(this.name, this.moduleA);
+
+  String get allName => '$name ${moduleA.name}';
 }

@@ -4,6 +4,7 @@ packages:
   - packages/*
 
 scripts:
+  prepare: melos bootstrap
   analyze:
     exec: dart analyze .
   test:

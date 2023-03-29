@@ -1,7 +1,14 @@
 library module_c;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+import 'package:module_a/module_a.dart';
+import 'package:module_b/module_b.dart';
+
+class ModuleC {
+  final String name;
+  final ModuleA moduleA;
+  final ModuleB moduleB;
+
+  ModuleC(this.name, this.moduleA, this.moduleB);
+
+  String get allName => '$name ${moduleA.name} ${moduleB.allName}';
 }

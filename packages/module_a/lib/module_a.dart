@@ -1,5 +1,7 @@
 library module_a;
 
 class ModuleA {
-  String get name => 'Module A';
+  final String name;
+
+  ModuleA(this.name);
 }
